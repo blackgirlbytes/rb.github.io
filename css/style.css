@@ -1,0 +1,257 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+
+}
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     position: relative;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+	margin: auto;
+
+
+}
+
+header{
+  border-top: .5px solid white;
+  border-bottom: .5px solid white;
+  height: 570px;
+  width: 100%;
+  background-image: url(https://static.tumblr.com/3cb35a552fb8c0936c9f18f786ab091a/rezcrmv/7Idnuqnyx/tumblr_static_tumblr_static_ertafp5e8gg8gkccck8kss8ck_640.png);
+  background-size: cover;
+}
+
+
+
+header > img {
+width: 18%;
+height: auto;
+float: right;
+
+}
+
+nav {
+  float: left;
+}
+
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a29bfe;
+  background-size: cover;
+  float: left;
+  width: 100%;
+}
+
+ .navi>li >a {
+  float: left;
+}
+
+ .navi>li > a  {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 22px 44px;
+  text-decoration: none;
+  font-size: 1.4em;
+  margin-left: 0%;
+}
+
+
+.navi>li> a:hover {
+
+  color: white;
+}
+
+ header >section > h1{
+  font-family: 'Montserrat', sans-serif;
+
+  width: 40%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1;
+  z-index: 1;
+  margin-top: 15%;
+  margin-left: 20%;
+  display: block;
+}
+
+header >section > h1:hover, header >section > h2:hover{
+  color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+ header > section> h2{
+  font-family: 'Montserrat', sans-serif;
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 1s step-end infinite;
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1;
+  z-index: 1;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+header > section > h1 span, header > section > h2  span{
+  color: #BF55EC;
+}
+
+header > section > h1 span:hover, header > section > h2  span:hover{
+  color: white;
+text-shadow: -1px 0 #BF55EC, 0 1px #BF55EC, 1px 0 #BF55EC, 0 -1px #BF55EC;
+}
+
+#blackgirl{
+  height:250px;
+  width:auto;
+  position: absolute;
+  left:0;
+  margin-top: 30px;
+}
+
+#aboutMe, #picMe{
+  height: 600px;
+  width: 50%;
+  float: left;
+  background-color: #a29bfe;
+  border-radius: 2px;
+}
+
+
+#picMe > img{
+  margin-top:50px;
+  margin-left: 5%;
+}
+
+#aboutMe > h2{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5em;
+
+  color:#BF55EC;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#aboutMe > p{
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: 1.5em;
+  color:black;
+  width:92%;
+
+}
+
+#portfolio{
+  height: 450px;
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+  background-color: #FDA7DF;
+}
+
+#choices{
+  height: 150px;
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+  background-color:#a29bfe;
+}
+
+#resume{
+  height: 1700px;
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+
+}
+
+#resume >img{
+  width: 100%;
+  height:auto;
+}
+footer {
+height: 300px;
+width:100%;
+background-color: #a29bfe;
+float: left;
+}
+
+footer img{
+
+    height: 50px;
+    width: AUTO;
+    filter: brightness(0) invert(1);
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
